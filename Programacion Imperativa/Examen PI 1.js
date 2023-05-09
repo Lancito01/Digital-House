@@ -17,15 +17,26 @@ function restarPares(num1, num2){
 //TODO: Si tiene entrada y es mayor o igual de 18 años: retorna un valor booleano true.
 //TODO: Si tiene entrada pero es menor de 18 años: retorna un string que diga “Sólo puedes acceder con un adulto acompañante”.
 //TODO: Si no tiene entrada: retorna un booleano false.
-function recital(age, has_ticket){
-    if(age>=18 && has_ticket){
-        return true
-    }
-    else if(has_ticket){
-        return "Sólo puedes accedes con un adulto acompañante"
+//*Respuesta original
+// function recital(age, has_ticket){
+//     if(age>=18 && has_ticket){
+//         return true
+//     }
+//     else if(has_ticket){
+//         return "Sólo puedes accedes con un adulto acompañante"
+//     }
+//     else{
+//         return false
+//     }
+// }
+
+//? Modificacion Post-Examen
+function recital(age, hasTicket){
+    if(age<18 && hasTicket){
+        return "Solo puedes acceder con un adulto acompañante"
     }
     else{
-        return false
+        return age>=18 && hasTicket
     }
 }
 
