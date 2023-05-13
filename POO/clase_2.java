@@ -1,4 +1,3 @@
-// import scanner
 import java.util.Scanner;
 
 public class clase_2 {

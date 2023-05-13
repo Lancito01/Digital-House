@@ -1,3 +1,5 @@
+package ejercicios_en_mesas;
+
 public class actividad_clase_1{
     public static void main(String[] args){
         String nombre = "Manchitas";

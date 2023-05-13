@@ -1,3 +1,5 @@
+package ejercicios_en_mesas;
+
 import java.util.Scanner;
 
 public class actividad_clase_2 {
@@ -6,7 +8,7 @@ public class actividad_clase_2 {
         if (number <= 1) {
             return false;
         }
-        for (int i = 2; i <= number/2 + 1; i++) {
+        for (int i = 2; i <= Math.sqrt(number); i++) {
             if (number % i == 0) {
                 return false;
             }
@@ -14,7 +16,7 @@ public class actividad_clase_2 {
         return true;
     }
 
-    public static int getMaxNumber(int num1, int num2, int num3){
+    public static int getMaxNumber(int num1, int num2, int num3) {
         int max = num1;
         if (num2 > max) {
             max = num2;
@@ -25,12 +27,12 @@ public class actividad_clase_2 {
         return max;
     }
 
-    public static boolean areStringsEqual(String unTextoA, String unTextoB){
+    public static boolean areStringsEqual(String unTextoA, String unTextoB) {
         return unTextoA.equals(unTextoB);
         // return unTextoA == unTextoB
     }
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int number;
         System.out.println("Ingrese un numero: ");
@@ -41,7 +43,7 @@ public class actividad_clase_2 {
             System.out.println("El numero no es primo");
         }
         scanner.nextLine();
-        
+
         int num1, num2, num3;
         System.out.println("Ingrese el primer numero: ");
         num1 = scanner.nextInt();
@@ -51,7 +53,7 @@ public class actividad_clase_2 {
         num3 = scanner.nextInt();
         System.out.println("El numero mas grande es: " + getMaxNumber(num1, num2, num3));
         scanner.nextLine();
-        
+
         String stringA, stringB;
         System.out.println("Ingrese el primer texto: ");
         stringA = scanner.nextLine();
