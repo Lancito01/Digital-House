@@ -1,4 +1,4 @@
-package ejercicios_en_mesas;
+package ejercicios_en_mesas.clase_3;
 
 import java.util.Scanner;
 

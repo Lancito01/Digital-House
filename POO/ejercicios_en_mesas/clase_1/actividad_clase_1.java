@@ -1,4 +1,4 @@
-package ejercicios_en_mesas;
+package ejercicios_en_mesas.clase_1;
 
 public class actividad_clase_1{
     public static void main(String[] args){

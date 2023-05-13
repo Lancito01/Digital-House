@@ -1,8 +1,8 @@
-package ejercicios_en_mesas;
+package ejercicios_en_mesas.clase_3;
 
 import java.util.Scanner;
 
-public class actividad_clase_3_spock {
+public class actividad_clase_3_desafio1 {
 
     public static int convertChoiceToInt(String choice) {
         switch (choice.toLowerCase()) {
@@ -12,8 +12,6 @@ public class actividad_clase_3_spock {
                 return 2;
             case "tijera":
                 return 3;
-            case "spock":
-                return 4;
             default:
                 return 0;
         }
@@ -31,12 +29,12 @@ public class actividad_clase_3_spock {
         String eleccion1 = "", eleccion2;
         int choice1 = 0, choice2 = 0, puntosJugador1 = 0, puntosJugador2 = 0;
         while (true) {
-            System.out.println("\tJugador 1:\n\tPiedra, papel, tijera o spock?");
+            System.out.println("\tJugador 1:\n\tPiedra, papel o tijera?");
             eleccion1 = scanner.nextLine();
             if (eleccion1.equals("*"))
                 break;
 
-            System.out.println("\nJugador 2:\n\tPiedra, papel, tijera o spock?");
+            System.out.println("\nJugador 2:\n\tPiedra, papel o tijera?");
             eleccion2 = scanner.nextLine();
 
             // convert choice to int
@@ -56,34 +54,16 @@ public class actividad_clase_3_spock {
             } else if (choice1 == 1 && choice2 == 3) {
                 System.out.println("Gana " + nombreJugador1);
                 puntosJugador1++;
-            } else if (choice1 == 1 && choice2 == 4) {
-                System.out.println("Gana " + nombreJugador2);
-                puntosJugador2++;
             } else if (choice1 == 2 && choice2 == 1) {
                 System.out.println("Gana " + nombreJugador1);
                 puntosJugador1++;
             } else if (choice1 == 2 && choice2 == 3) {
                 System.out.println("Gana " + nombreJugador2);
                 puntosJugador2++;
-            } else if (choice1 == 2 && choice2 == 4) {
-                System.out.println("Gana " + nombreJugador1);
-                puntosJugador1++;
             } else if (choice1 == 3 && choice2 == 1) {
                 System.out.println("Gana " + nombreJugador2);
                 puntosJugador2++;
             } else if (choice1 == 3 && choice2 == 2) {
-                System.out.println("Gana " + nombreJugador1);
-                puntosJugador1++;
-            } else if (choice1 == 3 && choice2 == 4) {
-                System.out.println("Gana " + nombreJugador2);
-                puntosJugador2++;
-            } else if (choice1 == 4 && choice2 == 1) {
-                System.out.println("Gana " + nombreJugador1);
-                puntosJugador1++;
-            } else if (choice1 == 4 && choice2 == 2) {
-                System.out.println("Gana " + nombreJugador2);
-                puntosJugador2++;
-            } else if (choice1 == 4 && choice2 == 3) {
                 System.out.println("Gana " + nombreJugador1);
                 puntosJugador1++;
             }
