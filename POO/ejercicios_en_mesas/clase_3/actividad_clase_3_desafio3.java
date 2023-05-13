@@ -25,11 +25,14 @@ public class actividad_clase_3_desafio3 {
 
         System.out.println("Los primeros " + count + " numeros primos son:");
         int num = 1;
-        while(count != 0) {
-            if(isPrime(num++)) {
-                System.out.println(num-1);
+        String result = "";
+        while (count != 0) {
+            if (isPrime(num++)) {
+                result += num - 1 + ", ";
                 count--;
             }
         }
+        result = result.substring(0, result.length() - 2) + "."; // remove last comma, add period
+        System.out.println(result);
     }
 }
