@@ -1,0 +1,1 @@
+La falla es la manifestación de un defecto. La falla puede ser un cartel de error que sale en una página, cuando se le manifiesta al usuario.

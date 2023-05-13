@@ -10,7 +10,7 @@ public class actividad_clase_3_desafio4 {
         System.out.println("Ingrese cuántas horas trabajó esta semana:");
         int horasTrabajadas = scanner.nextInt();
 
-        int horasExtras = horasTrabajadas - 40;
+        int horasExtras = horasTrabajadas > 40 ? horasTrabajadas - 40 : 0;
         int precioPorHora = 875;
 
         System.out.println(nombre + " trabajó " + horasTrabajadas + " horas esta semana, por lo que cobra $"
