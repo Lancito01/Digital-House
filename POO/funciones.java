@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class clase_3 {
+public class funciones {
     static int cuantosPaquetes(double cantidadDeComida, Scanner scanner){
         double pesoAcumulado = 0;
         int paquetes = 0;

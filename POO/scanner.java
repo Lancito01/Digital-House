@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class clase_2 {
+public class scanner {
     
     public static String getInitials(String name, String surname) {
         return "" + name.charAt(0) + surname.charAt(0); //! El "" es necesario porque si no, al sumar chars se suma su valor ASCII en vez de las letras en si para convertirlo en un string...........
