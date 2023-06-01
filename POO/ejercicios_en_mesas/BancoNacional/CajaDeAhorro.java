@@ -5,7 +5,6 @@ public class CajaDeAhorro extends Cuenta {
     double tasaDeInteres;
 
     CajaDeAhorro(Cliente cliente, double saldo, double tasaDeInteres) {
-
         super(cliente, saldo);
         this.tasaDeInteres = tasaDeInteres;
     }

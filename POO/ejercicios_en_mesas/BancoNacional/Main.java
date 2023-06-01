@@ -13,8 +13,10 @@ public class Main {
         cajaDeAhorro1.depositar(1000);
         cajaDeAhorro1.extraer(500);
         cajaDeAhorro1.extraer(50000);
+
         if (cajaDeAhorro1 instanceof CajaDeAhorro)
             ((CajaDeAhorro) cajaDeAhorro1).cobrarInteres();
+
         System.out.println(cajaDeAhorro1.getSaldo());
 
         cuentaCorriente1.depositar(1000);
@@ -24,6 +26,6 @@ public class Main {
         cuentaCorriente1.extraer(500);
         cuentaCorriente1.extraer(50000);
         System.out.println(cuentaCorriente1.getSaldo());
-        
+
     }
 }
