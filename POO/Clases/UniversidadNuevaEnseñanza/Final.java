@@ -1,3 +1,5 @@
+package Clases.UniversidadNuevaEnseñanza;
+
 public class Final extends Examen implements Comparable {
     int notaDeOral;
     String descripcion;

@@ -1,3 +1,5 @@
+package Clases.UniversidadNuevaEnseñanza;
+
 public class Alumno {
     String nombre, apellido, legajo;
 

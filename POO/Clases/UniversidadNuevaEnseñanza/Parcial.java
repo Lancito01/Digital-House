@@ -1,3 +1,5 @@
+package Clases.UniversidadNuevaEnseñanza;
+
 public class Parcial extends Examen {
     int numeroDeUnidad, numeroDeReintentos;
 

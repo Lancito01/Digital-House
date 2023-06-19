@@ -1,3 +1,5 @@
+package Clases.UniversidadNuevaEnseñanza;
+
 public class Examen {
     Alumno alumno;
     String titulo, enunciado;
